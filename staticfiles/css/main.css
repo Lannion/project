@@ -747,16 +747,11 @@ svg {
 /* ======================================================
               CONTACT
 ========================================================*/
-.contact  {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-}
 .contact-content .row {
   margin-top: -65px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 1rem;
 }
 .contact .title h2 {
   font-weight: 500;
