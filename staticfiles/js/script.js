@@ -1,11 +1,19 @@
 // ============== MENU NAVBAR ================
 const navlist = document.querySelector(".navlist");
 const menuBtn = document.querySelector(".ri-menu-line");
+const navLinks = document.querySelectorAll(".navlist li a");
 
 menuBtn.onclick = function () {
   navlist.classList.toggle("active");
   menuBtn.classList.toggle("ri-arrow-up-double-line");
 };
+
+navLinks.forEach(link => {
+  link.onclick = function () {
+    navlist.classList.remove("active");
+    menuBtn.classList.remove("ri-arrow-up-double-line");
+  };
+});
 
 // ============== STICKY NAVBAR ================
 window.addEventListener("scroll", () => {
