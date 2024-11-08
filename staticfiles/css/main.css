@@ -398,9 +398,6 @@ nav.scrolling {
   gap: 1rem;
   margin-top: 3rem;
 }
-.progress-bar {
-  position: relative;
-}
 .about .container .outer-circle {
   height: 160px;
   width: 160px;
@@ -437,31 +434,6 @@ circle {
   stroke-dashoffset: 450;
   animation: js 2.5s linear forwards;
   -webkit-animation: js 2.5s linear forwards;
-}
-.container,
-.progress-bar:nth-child(2) circle {
-  animation: rj 2.5s linear forwards;
-  -webkit-animation: rj 2.5s linear forwards;
-}
-.container,
-.progress-bar:nth-child(3) circle {
-  animation: nj 2.5s linear forwards;
-  -webkit-animation: nj 2.5s linear forwards;
-}
-@keyframes js {
-  100% {
-    stroke-dashoffset: 205;
-  }
-}
-@keyframes rj {
-  100% {
-    stroke-dashoffset: 250;
-  }
-}
-@keyframes nj {
-  100% {
-    stroke-dashoffset: 280;
-  }
 }
 svg {
   position: absolute;
